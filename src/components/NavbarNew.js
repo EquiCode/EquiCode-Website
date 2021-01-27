@@ -13,37 +13,38 @@ import {
     DropdownItem,
     NavbarText
   } from 'reactstrap';
+import styled from 'styled-components';
 export default function NavbarNew() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div>
-      <Navbar color="light" light expand="md">
+    <NavbarComponent>
+      <Navbar color="light" light expand="md" className="rounded-nav">
         <NavbarBrand href="/">Equicode</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/components/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="https://github.com/reactstrap/reactstrap">About us</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                Random
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  Team
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
+                  Events
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Reset
+                  Contact Us
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -51,6 +52,14 @@ export default function NavbarNew() {
           <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
-      </div>
+      </NavbarComponent>
   );
 }
+
+const NavbarComponent = styled.div`
+  .rounded-nav {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background:white;
+  }
+`;

@@ -1,14 +1,15 @@
 import React, { Component } from "react";
+// import { Navbar } from "reactstrap";
 import styled from "styled-components";
 import Navbar from "../components/navbar/Navbar";
-import NavbarNew from '../components/navbar/NavbarNew';
-import { ReactComponent as ReactLogo } from "../vector/clip-942.svg";
+import NavbarNew from '../components/NavbarNew';
+import vector from "../vector/clip-942.svg";
 class Home extends Component {
   render() {
     return (
       <HomeStyled>
         <div className="border">
-          <Navbar />
+          <NavbarNew />
           <div className="container">
             <div className="content">
               <div className="header">Encouraging</div>
@@ -19,7 +20,7 @@ class Home extends Component {
                 environment
               </div>
             </div>
-            <ReactLogo className="homeVector" />
+            <img src={vector} className="homeVector" />
           </div>
         </div>
       </HomeStyled>
@@ -30,13 +31,14 @@ class Home extends Component {
 export default Home;
 
 const HomeStyled = styled.div`
-  background-color: #394561;
+  // background-color: #394561;
+  background:#F6B230;
   height: 100vh;
-  position: absolute;
-  width: 100vw;
+  overflow:hidden;
+  // width: 100vw;
 
   .border {
-    margin: 5vh 2vw;
+    margin: 2rem;
     background-color: #f4f7ff;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
@@ -48,27 +50,26 @@ const HomeStyled = styled.div`
     justify-content: center;
     align-items: center;
   }
-  .container .homeVector {
-    height: 100%;
-    width: 60%;
-  }
-  .container .content {
-    margin-bottom: 20vh;
+  .homeVector {
+    height: 35rem;
   }
   .container .content .header {
     font-weight: 800;
     font-size: 5rem;
-    color: #394561;
+    color: #e1970a;
   }
   .container .content .second-header {
     font-weight: 100;
     font-size: 4rem;
-    color: #394561;
+    color: black;
   }
   .container .content .third-header {
     font-weight: 50;
     font-size: 1rem;
     margin-top: 2vh;
     line-height: 1.5;
+  }
+  .content{
+    // margin-right:1rem;
   }
 `;

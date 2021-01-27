@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Navbar from "../components/navbar/Navbar";
+import NavbarNew from '../components/navbar/NavbarNew';
 import { ReactComponent as ReactLogo } from "../vector/clip-942.svg";
 class Home extends Component {
   render() {
@@ -18,7 +19,6 @@ class Home extends Component {
                 environment
               </div>
             </div>
-
             <ReactLogo className="homeVector" />
           </div>
         </div>

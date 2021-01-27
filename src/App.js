@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
 import Home from "./components/Home";
 import AboutUs from "./components/Aboutus";
@@ -10,20 +10,26 @@ import Pillars from "./components/Pillars";
 import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
 
+import Navbar from "./components/navbar/Navbar";
+import NavbarNew from './components/navbar/NavbarNew';
 import "./App.css";
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div>
-        <Home />
-        <Route path="/about" component={AboutUs} />
-        <Route path="/pillars" component={Pillars} />
-        <Route path="/about" component={CurrentEvent} />
-        <Team path="/about" component={CurrentEvent} />
-        <Events />
-        <Testimonials />
-        <Contactus />
+      <div className="App">
+        {/* <NavbarNew /> */}
+        {/* <Navbar /> */}
+        <Switch>
+          <Home />
+          <Route path="/about" component={AboutUs} />
+          <Route path="/pillars" component={Pillars} />
+          <Route path="/about" component={CurrentEvent} />
+          {/* <Team path="/about" component={CurrentEvent} /> */}
+          <Route path="/contactus" component={Contactus} />
+          <Events />
+          <Testimonials />
+          <Contactus />
+        </Switch>
         <Footer />
       </div>
     </Router>

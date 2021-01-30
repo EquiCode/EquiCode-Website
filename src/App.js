@@ -9,29 +9,39 @@ import Footer from "./components/Footer";
 import Pillars from "./components/Pillars";
 import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
+import Sponsors from "./components/Sponsors";
 
-import Navbar from "./components/navbar/Navbar";
-import NavbarNew from './components/NavbarNew';
+import NavbarNew from "./components/NavbarNew";
 import "./App.css";
 function App() {
   return (
-    <Router>
-      <div className="App">
-        {/* <NavbarNew /> */}
-        {/* <Navbar /> */}
+    <div className="App">
+      <NavbarNew />
+      {/* <NavbarNew /> */}
+      {/* <Navbar /> */}
+      <Home />
+      <AboutUs />
+      <Pillars />
+      <Events />
+      <Contactus />
+      <Testimonials />
+      <Sponsors />
+      <Router>
         <Switch>
-          <Route exact path="/" component={Home}/>
+          {/* <Route exact path="/" component={Home} /> */}
           <Route path="/about" component={AboutUs} />
+
           <Route path="/pillars" component={Pillars} />
-          <Route path="/about" component={CurrentEvent} />
+          <Route path="/current" component={CurrentEvent} />
           <Route path="/contactus" component={Contactus} />
-          <Events />
-          <Testimonials />
-          <Contactus />
+          <Route path="/events" component={Events} />
+          <Route path="/testimonials" component={Testimonials} />
+          <Route path="/footer" component={Footer} />
+          <Route path="/team" component={Team} />
         </Switch>
         {/* <Footer /> */}
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

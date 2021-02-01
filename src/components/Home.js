@@ -1,27 +1,28 @@
 import React, { Component } from "react";
-// import { Navbar } from "reactstrap";
 import styled from "styled-components";
-import Navbar from "../components/navbar/Navbar";
-import NavbarNew from '../components/NavbarNew';
-import vector from "../vector/vector-creator.svg";
+import vector from "../vector/home2.svg";
+import { Button } from "reactstrap";
+
 class Home extends Component {
   render() {
     return (
       <HomeStyled>
-        <div className="border">
-          <NavbarNew />
-          <div className="container">
-            <div className="content">
-              <div className="header">Encouraging</div>
-              <div className="second-header">Equal Learning</div>
-              <div className="third-header">
-                EquiCode focuses on the holistic development of beginners <br />{" "}
-                and veterans alike. We aspire to cultivate a diverse learning
-                environment
-              </div>
-            </div>
-            <img src={vector} className="homeVector" />
+        <div className="content">
+          <div className="header">simply dummy text</div>
+          <div className="heading">
+            of the printing and typesetting industry
           </div>
+          <div className="intro">
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book it to make a type specimen book.
+          </div>
+          <Button size="lg" id="button">
+            Join us
+          </Button>{" "}
+        </div>
+        <div className="vector">
+          <img src={vector} alt="" className="image" />
         </div>
       </HomeStyled>
     );
@@ -31,45 +32,45 @@ class Home extends Component {
 export default Home;
 
 const HomeStyled = styled.div`
-  // background-color: #394561;
-  background:#F6B230;
-  height: 100vh;
-  overflow:hidden;
-  // width: 100vw;
-
-  .border {
-    margin: 2rem;
-    background-color: #f4f7ff;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 24px;
-    height: 90vh;
+  background: #fef3db;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  ${"" /* align-items: center; */}
+  .content {
+    margin: 1rem 0rem 15rem 3rem;
+    padding: 5rem 2rem 7rem 2rem;
+    overflow: hidden;
   }
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  .vector {
+    padding: 0rem 1rem;
   }
-  .homeVector {
-    height: 35rem;
+  .image {
+    height: 57rem;
+    width: 60rem;
   }
-  .container .content .header {
+  .header {
+    font-size: 1.5rem;
     font-weight: 800;
-    font-size: 5rem;
-    color: #e1970a;
+    margin-bottom: 1.5rem;
   }
-  .container .content .second-header {
-    font-weight: 100;
-    font-size: 4rem;
-    color: black;
+  .heading {
+    font-size: 3rem;
+    font-weight: 800;
+    border-bottom: 10px solid coral;
+    border-bottom-length: 4rem;
+    line-height: 4rem;
   }
-  .container .content .third-header {
-    font-weight: 50;
-    font-size: 1rem;
-    margin-top: 2vh;
-    line-height: 1.5;
+  .intro {
+    margin-top: 2rem;
+    line-height: 1.5rem;
   }
-  .content{
-    // margin-right:1rem;
+  #button {
+    margin: 3.5rem auto;
+    length: 40rem;
+    width: 10rem;
+    background-color: coral;
+    border: none;
   }
 `;

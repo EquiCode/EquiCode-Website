@@ -6,33 +6,42 @@ import Contactus from "./components/Contactus";
 import CurrentEvent from "./components/CurrentEvent";
 import Events from "./components/Events";
 import Footer from "./components/Footer";
-import Pillars from "./components/Pillars";
+
 import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
-import Navbar from "./components/navbar/Navbar";
-import NavbarNew from './components/NavbarNew';
-import Main from './pages/Main';
+import Sponsors from "./components/Sponsors";
+
+import NavbarNew from "./components/NavbarNew";
 import "./App.css";
 function App() {
   return (
-    <Router>
-      <div className="App">
-        {/* <NavbarNew /> */}
-        {/* <Navbar /> */}
+    <div className="App">
+      <NavbarNew />
+      {/* <NavbarNew /> */}
+      {/* <Navbar /> */}
+      <Home />
+      <AboutUs />
+
+      <Events />
+      <Contactus />
+      <Testimonials />
+      <Sponsors />
+      <Footer />
+      <Router>
         <Switch>
-          <Route exact path="/" component={Home}/>
+          {/* <Route exact path="/" component={Home} /> */}
           <Route path="/about" component={AboutUs} />
-          <Route path="/pillars" component={Pillars} />
-          <Route path="/about" component={CurrentEvent} />
+
+          <Route path="/current" component={CurrentEvent} />
           <Route path="/contactus" component={Contactus} />
-          <Route path="/main" component={Main} />
-          {/* <Events />
-          <Testimonials />
-          <Contactus /> */}
+          <Route path="/events" component={Events} />
+          <Route path="/testimonials" component={Testimonials} />
+          <Route path="/footer" component={Footer} />
+          <Route path="/team" component={Team} />
         </Switch>
         {/* <Footer /> */}
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

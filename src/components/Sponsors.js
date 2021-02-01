@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import background from "../images/Final.png";
+import bg from "../vector/sponsor.svg";
 
 export default function Sponsors() {
   return (
@@ -21,25 +21,25 @@ export default function Sponsors() {
 
 const StyledSponsor = styled.div`
   height: 70vh;
+  background: url(${bg});
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .card {
-    background-image: url(${background});
-    background-size: 100% 100%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    background: #fef3db;
+    border: none;
+    padding: 2rem 7rem;
 
-    padding: 2rem;
-    margin: 5rem;
     border-radius: 16px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
+
   .header,
   .content,
   .form {
     margin: auto;
-    filter: blur(0px);
-
-    index: 1;
   }
   .header {
     font-size: 2rem;
@@ -47,7 +47,7 @@ const StyledSponsor = styled.div`
   }
   .content {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 500;
     padding: 1rem;
   }
   .form {

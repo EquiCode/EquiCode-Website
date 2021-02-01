@@ -21,7 +21,7 @@ export default function NavbarNew() {
     <NavbarComponent>
       <Navbar light expand="md" className="rounded-nav">
         <NavbarBrand href="/">
-          <img src={Logo} alt="" width="60" height="60" className="Logo" />
+          <img src={Logo} alt="" width="50" height="50" className="Logo" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -69,5 +69,8 @@ const NavbarComponent = styled.div`
   }
   .cnav {
     margin-right: 2rem;
+  }
+  .logo {
+    border-radius: 16px;
   }
 `;

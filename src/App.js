@@ -6,7 +6,7 @@ import Contactus from "./components/Contactus";
 import CurrentEvent from "./components/CurrentEvent";
 import Events from "./components/Events";
 import Footer from "./components/Footer";
-import Pillars from "./components/Pillars";
+
 import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
 import Sponsors from "./components/Sponsors";
@@ -21,17 +21,17 @@ function App() {
       {/* <Navbar /> */}
       <Home />
       <AboutUs />
-      <Pillars />
+
       <Events />
       <Contactus />
       <Testimonials />
       <Sponsors />
+      <Footer />
       <Router>
         <Switch>
           {/* <Route exact path="/" component={Home} /> */}
           <Route path="/about" component={AboutUs} />
 
-          <Route path="/pillars" component={Pillars} />
           <Route path="/current" component={CurrentEvent} />
           <Route path="/contactus" component={Contactus} />
           <Route path="/events" component={Events} />

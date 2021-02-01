@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
 import vector from "../vector/home2.svg";
 import { Button } from "reactstrap";
 
@@ -35,7 +34,6 @@ export default Home;
 const HomeStyled = styled.div`
   background: #fef3db;
   height: 90vh;
-
   display: flex;
   flex-direction: row;
   justify-content: center;

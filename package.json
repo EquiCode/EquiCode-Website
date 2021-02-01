@@ -13,6 +13,7 @@
     "react-scripts": "4.0.1",
     "reactstrap": "^8.9.0",
     "styled-components": "^5.2.1",
+    "styled-media-query": "^2.1.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

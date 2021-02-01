@@ -69,7 +69,7 @@ class Aboutus extends Component {
 
 export default Aboutus;
 const StyledAbout = styled.div`
-  height: 100vh;
+  height: 120vh;
   background: #fff;
   padding: 4rem;
   .themed-container {

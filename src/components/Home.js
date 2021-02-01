@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import vector from "../vector/home2.svg";
 import { Button } from "reactstrap";
-
+import { generateMedia } from 'styled-media-query';
 class Home extends Component {
   render() {
     return (
-      <HomeStyled>
+      <HomeContainer>
         <div className="content">
           <div className="header">simply dummy text</div>
           <div className="heading">
@@ -24,53 +24,93 @@ class Home extends Component {
         <div className="vector">
           <img src={vector} alt="" className="image" />
         </div>
-      </HomeStyled>
+      </HomeContainer>
     );
   }
 }
 
 export default Home;
 
-const HomeStyled = styled.div`
+// Media Query
+const customMedia = generateMedia({
+  smDesktop: '1440px',
+  tablet: '960px',
+
+})
+
+const HomeContainer = styled.div`
   background: #fef3db;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  ${"" /* align-items: center; */}
-  .content {
-    margin: 1rem 0rem 15rem 3rem;
-    padding: 5rem 2rem 7rem 2rem;
-    overflow: hidden;
+  justify-content: space-evenly;
+  .content{
+    margin-top:5rem;
+    width:30rem;
+    align-items:center;
   }
-  .vector {
-    padding: 0rem 1rem;
+  .vector{
+    margin-top:5rem;
+    width:40rem;
+    align-items:center;
   }
-  .image {
-    height: 57rem;
-    width: 60rem;
+  .image{
+    width:40rem;
   }
-  .header {
-    font-size: 1.5rem;
-    font-weight: 800;
-    margin-bottom: 1.5rem;
-  }
+
   .heading {
-    font-size: 3rem;
-    font-weight: 800;
-    border-bottom: 10px solid coral;
-    border-bottom-length: 4rem;
-    line-height: 4rem;
-  }
-  .intro {
-    margin-top: 2rem;
-    line-height: 1.5rem;
-  }
-  #button {
-    margin: 3.5rem auto;
-    length: 40rem;
-    width: 10rem;
-    background-color: coral;
-    border: none;
-  }
+      font-size: 3rem;
+      font-weight: 800;
+      border-bottom: 10px solid coral;
+      border-bottom-length: 4rem;
+      line-height: 4rem;
+    }
+    .header {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+      }
+
+
+
+  // flex-wrap:wrap;
+  // align-items: center;
+  // .content {
+  //   margin: 1rem 0rem 15rem 3rem;
+  //   padding: 5rem 2rem 7rem 2rem;
+  //   overflow: hidden;
+  // }
+  // .vector {
+  //   padding: 0rem 1rem;
+  // }
+  // .image {
+  //   height: 57rem;
+  //   width: 60rem;
+  //   ${customMedia.lessThan('tablet')`
+  //     height:20rem;
+  //   `}
+  // }
+  // .header {
+  //   font-size: 1.5rem;
+  //   font-weight: 800;
+  //   margin-bottom: 1.5rem;
+  // }
+  // .heading {
+  //   font-size: 3rem;
+  //   font-weight: 800;
+  //   border-bottom: 10px solid coral;
+  //   border-bottom-length: 4rem;
+  //   line-height: 4rem;
+  // }
+  // .intro {
+  //   margin-top: 2rem;
+  //   line-height: 1.5rem;
+  // }
+  // #button {
+  //   margin: 3.5rem auto;
+  //   length: 40rem;
+  //   width: 10rem;
+  //   background-color: coral;
+  //   border: none;
+  // }
 `;

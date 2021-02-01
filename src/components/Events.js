@@ -5,7 +5,9 @@ class Events extends Component {
   render() {
     return (
       <StyledEvents>
-        <h1>All Events</h1>
+        <div className="heading">
+          <h1>All Events</h1>
+        </div>
       </StyledEvents>
     );
   }
@@ -15,11 +17,14 @@ export default Events;
 
 const StyledEvents = styled.div`
   background: #f5f5dc;
-  overflow: scroll;
+  // overflow: scroll;
   display: flex;
   justify-content: center;
   height: 100vh;
-
+  padding:2rem;
+  .heading{
+    height:5rem;
+  }
   .container {
     border-radius: 24px;
     display: flex;

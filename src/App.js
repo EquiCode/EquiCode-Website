@@ -12,26 +12,16 @@ import Testimonials from "./components/Testimonials";
 import Sponsors from "./components/Sponsors";
 
 import NavbarNew from "./components/NavbarNew";
-import "./App.css";
+
+import Main from './pages/Main';
 function App() {
   return (
     <div className="App">
       <NavbarNew />
-      {/* <NavbarNew /> */}
-      {/* <Navbar /> */}
-      <Home />
-      <AboutUs />
-
-      <Events />
-      <Contactus />
-      <Testimonials />
-      <Sponsors />
-      <Footer />
       <Router>
         <Switch>
-          {/* <Route exact path="/" component={Home} /> */}
+          <Route exact path="/" component={Main} />
           <Route path="/about" component={AboutUs} />
-
           <Route path="/current" component={CurrentEvent} />
           <Route path="/contactus" component={Contactus} />
           <Route path="/events" component={Events} />
@@ -39,7 +29,7 @@ function App() {
           <Route path="/footer" component={Footer} />
           <Route path="/team" component={Team} />
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

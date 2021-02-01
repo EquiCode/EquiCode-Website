@@ -9,9 +9,9 @@ import Footer from "./components/Footer";
 import Pillars from "./components/Pillars";
 import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
-
 import Navbar from "./components/navbar/Navbar";
 import NavbarNew from './components/NavbarNew';
+import Main from './pages/Main';
 import "./App.css";
 function App() {
   return (
@@ -25,9 +25,10 @@ function App() {
           <Route path="/pillars" component={Pillars} />
           <Route path="/about" component={CurrentEvent} />
           <Route path="/contactus" component={Contactus} />
-          <Events />
+          <Route path="/main" component={Main} />
+          {/* <Events />
           <Testimonials />
-          <Contactus />
+          <Contactus /> */}
         </Switch>
         {/* <Footer /> */}
       </div>

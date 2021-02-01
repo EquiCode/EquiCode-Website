@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Navbar from "../components/navbar/Navbar";
 import NavbarNew from '../components/NavbarNew';
-import vector from "../vector/clip-942.svg";
+import vector from "../vector/vector-creator.svg";
 class Home extends Component {
   render() {
     return (

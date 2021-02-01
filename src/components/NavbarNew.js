@@ -24,7 +24,7 @@ export default function NavbarNew() {
         <NavbarBrand href="/">Equicode</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="ml-auto" style={{alignItems:"right",justifyContent:"right"}} navbar>
             <NavItem>
               <NavLink href="/components/">Home</NavLink>
             </NavItem>
@@ -61,5 +61,10 @@ const NavbarComponent = styled.div`
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     background:white;
+  }
+  .customnav{
+   align-items:right;
+   justify-content:right;
+   align-self:right; 
   }
 `;

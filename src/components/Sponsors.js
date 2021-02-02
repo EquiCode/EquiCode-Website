@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import bg from "../vector/sponsor.svg";
-
+import { generateMedia } from 'styled-media-query';
 export default function Sponsors() {
   return (
     <StyledSponsor>
@@ -19,6 +19,13 @@ export default function Sponsors() {
   );
 }
 
+
+const customMedia = generateMedia({
+  smDesktop: '1440px',
+  tablet: '960px',
+
+})
+
 const StyledSponsor = styled.div`
   height: 70vh;
   background: url(${bg});
@@ -26,6 +33,9 @@ const StyledSponsor = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  ${customMedia.lessThan('tablet')`
+    
+  `}
 
   .card {
     background: #fef3db;
@@ -54,6 +64,9 @@ const StyledSponsor = styled.div`
     display: flex;
     flex-direction: row;
     margin: 2rem auto;
+    ${customMedia.lessThan('tablet')`
+        flex-direction:column;
+    `}
   }
   .button {
     background-color: coral;
@@ -63,6 +76,10 @@ const StyledSponsor = styled.div`
     margin: 1rem;
     color: white;
     font-size: 1.2rem;
+    ${customMedia.lessThan('tablet')`
+        padding:0;
+        margin:1rem 0 0 0;
+    `}
   }
   .input {
     border-radius: 8px;

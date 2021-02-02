@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import { Button } from "reactstrap";
 import image from "../vector/about.svg";
 import cardimg from "../icons/process.svg";
-
+import { generateMedia } from 'styled-media-query';
 class Aboutus extends Component {
   render() {
     const Factors = [
@@ -38,7 +38,7 @@ class Aboutus extends Component {
         <Container fluid={true}>
           <Row className="row">
             <Col className="content">
-              <div className="Heading">I have no idea what to write here.</div>
+              <div className="heading">I have no idea what to write here.</div>
               {Factors.map((factor) => {
                 return (
                   <Container className="themed-container" fluid={true}>
@@ -57,9 +57,9 @@ class Aboutus extends Component {
                 );
               })}
             </Col>
-            <Col className="vector">
               <img src={image} alt="" className="image" />
-            </Col>
+            {/* <Col className="vector">
+            </Col> */}
           </Row>
         </Container>
       </StyledAbout>
@@ -68,17 +68,41 @@ class Aboutus extends Component {
 }
 
 export default Aboutus;
+
+const customMedia = generateMedia({
+  smDesktop: '1440px',
+  tablet: '960px',
+
+})
+
 const StyledAbout = styled.div`
   height: 120vh;
   background: #fff;
   padding: 4rem;
+  ${customMedia.lessThan('tablet')`
+      padding:0;
+      height:fit-content;
+      margin:0;
+  `}
+  .row{
+    ${customMedia.lessThan('tablet')`
+      display:flex;
+      flex-direction:row;
+  `}
+  }
   .themed-container {
     display: flex;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
     margin: 1.2rem 0.5rem;
-
     padding-right: 0;
+    width:40rem;
+    ${customMedia.lessThan('tablet')`
+      margin:1.2rem 0;
+      height:12rem;
+      width:24rem;
+      // width:auto;
+    `}
   }
   .on-hover {
     background-color: #f4c629;
@@ -96,13 +120,21 @@ const StyledAbout = styled.div`
   .themed-container:hover .on-hover {
     visibility: visible;
   }
-  .Heading {
+  .heading {
     font-size: 2rem;
     font-weight: 800;
+    ${customMedia.lessThan('tablet')`
+      font-size:1.25rem;
+      width:fit-content;
+    `}
   }
   .content {
     margin: 1.5rem;
-    overflow: hidden;
+    // overflow: hidden;
+    ${customMedia.lessThan('tablet')`
+        margin:0rem;
+        // overflow:auto;
+    `}
   }
   .aboutinfo {
     margin: 2rem 1rem;
@@ -122,8 +154,13 @@ const StyledAbout = styled.div`
   }
   .image {
     overflow: hidden;
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
+    ${customMedia.lessThan('tablet')`
+      height:15rem;
+      width:auto;
+      margin:auto;
+    `}
   }
   .icon {
     overflow: hidden;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Container, Row, Col } from "reactstrap";
+
 import comma from "../icons/quote.svg";
 import image from "../vector/testimonial.svg";
 
@@ -8,104 +8,82 @@ export default class Testimonials extends Component {
   render() {
     return (
       <StyledTest>
-        <Container fluid={true}>
-          <Row>
-            <Col className="content" xs={7}>
-              <Row className="test1">
-                <img src={comma} alt="" className="quote" />
-                <div className="center">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">
+              Testimonials
+            </h1>
+            <div class="flex flex-wrap -m-4">
+              <div class="p-4 md:w-1/2 w-full">
+                <div class="h-full bg-gray-100 p-8 rounded">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="block w-5 h-5 text-gray-400 mb-4"
+                    viewBox="0 0 975.036 975.036"
+                  >
+                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                  </svg>
+                  <p class="leading-relaxed mb-6">
+                    Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                    carry neutra before they sold out fixie 90's microdosing.
+                    Tacos pinterest fanny pack venmo, post-ironic heirloom
+                    try-hard pabst authentic iceland.
+                  </p>
+                  <a class="inline-flex items-center">
+                    <img
+                      alt="testimonial"
+                      src="https://dummyimage.com/106x106"
+                      class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                    />
+                    <span class="flex-grow flex flex-col pl-4">
+                      <span class="title-font font-medium text-gray-900">
+                        Holden Caulfield
+                      </span>
+                      <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                    </span>
+                  </a>
                 </div>
-
-                <div className="author">Author</div>
-                <div className="position">Position</div>
-                <img src={comma} alt="" className="quote even" />
-              </Row>
-              <Row className="test2">
-                <img src={comma} alt="" className="quote" />
-                <div className="center">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing
-                </div>
-                <div className="author">Author</div>
-                <div className="position">Position</div>
-                <img src={comma} alt="" className="quote even" />
-              </Row>
-            </Col>
-            <Col className="vector">
-              <div class="header">
-                There are many variations of passages of Lorem passages of
-                Lorem.
               </div>
-              <img src={image} alt="" className="image" />
-            </Col>
-          </Row>
-        </Container>
+              <div class="p-4 md:w-1/2 w-full">
+                <div class="h-full bg-gray-100 p-8 rounded">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="block w-5 h-5 text-gray-400 mb-4"
+                    viewBox="0 0 975.036 975.036"
+                  >
+                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                  </svg>
+                  <p class="leading-relaxed mb-6">
+                    Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                    carry neutra before they sold out fixie 90's microdosing.
+                    Tacos pinterest fanny pack venmo, post-ironic heirloom
+                    try-hard pabst authentic iceland.
+                  </p>
+                  <a class="inline-flex items-center">
+                    <img
+                      alt="testimonial"
+                      src="https://dummyimage.com/107x107"
+                      class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                    />
+                    <span class="flex-grow flex flex-col pl-4">
+                      <span class="title-font font-medium text-gray-900">
+                        Alper Kamu
+                      </span>
+                      <span class="text-gray-500 text-sm">DESIGNER</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </StyledTest>
     );
   }
 }
 
 const StyledTest = styled.div`
-  height: 100vh;
-  padding: 2rem;
-  overflow: hidden;
-  .content {
-  }
-  .vector {
-  }
-  .test1,
-  .test2 {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    margin: 3rem;
-    padding: 2rem;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    font-style: italic;
-  }
-  .author {
-    margin: 1rem 2rem 0 2rem;
-    font-style: normal;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #606060;
-  }
-  .position {
-    font-style: normal;
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-left: 2rem;
-    color: #808080;
-  }
-  .quote:nth-child(odd) {
-    margin: auto;
-    margin-left: 0;
-  }
-  .even {
-    transform: rotate(180deg);
-    margin: auto;
-    margin-right: 0;
-  }
-  .center {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-  .image {
-    width: 100%;
-    height: 100%;
-  }
-  .header {
-    font-weight: 800;
-    font-size: 2rem;
-  }
+  background: #fae7b5;
 `;

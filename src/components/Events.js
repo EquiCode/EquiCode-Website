@@ -1,12 +1,19 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import Current from "./events/Current";
+import PastEvents from "./events/PastEvents";
+import NextEvent from "./events/NextEvent";
+import JoinUs from "./JoinUs";
 
 class Events extends Component {
   render() {
     return (
       <StyledEvents>
-        <div className="heading">
-          <h1>All Events</h1>
+        <div>
+          <Current />
+          <PastEvents />
+          <NextEvent />
+          <JoinUs />
         </div>
       </StyledEvents>
     );
@@ -15,23 +22,4 @@ class Events extends Component {
 
 export default Events;
 
-const StyledEvents = styled.div`
-  background: #f5f5dc;
-  // overflow: scroll;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  padding:2rem;
-  .heading{
-    height:5rem;
-  }
-  .container {
-    border-radius: 24px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-height: 70%;
-    min-width: 90%;
-    margin: 4rem;
-  }
-`;
+const StyledEvents = styled.div``;

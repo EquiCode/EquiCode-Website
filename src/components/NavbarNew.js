@@ -60,7 +60,7 @@ export default function NavbarNew() {
 
 const NavbarComponent = styled.div`
   .rounded-nav {
-    background-color: #fef3db;
+    background-color: #f7b32f;
   }
   .navbar-light .navbar-nav .nav-link {
     color: black;

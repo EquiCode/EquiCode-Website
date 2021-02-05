@@ -16,9 +16,11 @@ export default function JoinUs() {
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
                 </p>
-                <button class="flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-yellow-900 rounded">
-                  Learn More
-                </button>
+                <a href="http://bit.ly/Equicode">
+                  <button class="flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-yellow-900 rounded">
+                    Learn More
+                  </button>
+                </a>
               </div>
             </div>
             <div class="p-4 lg:w-1/3">
@@ -30,9 +32,11 @@ export default function JoinUs() {
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
                 </p>
-                <button class="flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-yellow-900 rounded">
-                  Learn More
-                </button>
+                <a href="http://bit.ly/Equicode">
+                  <button class="flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-yellow-900 rounded">
+                    Learn More
+                  </button>
+                </a>
               </div>
             </div>
             <div class="p-4 lg:w-1/3">
@@ -44,9 +48,11 @@ export default function JoinUs() {
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
                 </p>
-                <button class="flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-yellow-900 rounded">
-                  Learn More
-                </button>
+                <a href="http://bit.ly/Equicode">
+                  <button class="flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-yellow-900 rounded">
+                    Learn More
+                  </button>
+                </a>
               </div>
             </div>
           </div>

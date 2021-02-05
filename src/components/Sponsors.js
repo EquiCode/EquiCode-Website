@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 export default function Sponsors() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert("Thank you for submitting the form ! Our team will contact you soon");
+  };
   return (
     <StyledSponsor>
       <section class="text-gray-600 body-font">
@@ -16,10 +20,13 @@ export default function Sponsors() {
               haven't heard of them man bun deep.
             </p>
           </div>
-          <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
+          <form
+            onSubmit={handleSubmit}
+            class="style-form flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end"
+          >
             <div class="relative flex-grow w-full">
               <label for="full-name" class="leading-7 text-sm text-gray-600">
-                Full Name
+                Name of the Organisation
               </label>
               <input
                 type="text"
@@ -42,11 +49,15 @@ export default function Sponsors() {
             <button class="text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">
               Button
             </button>
-          </div>
+          </form>
         </div>
       </section>
     </StyledSponsor>
   );
 }
 
-const StyledSponsor = styled.div``;
+const StyledSponsor = styled.div`
+  .style-form {
+    border: 1px solid black;
+  }
+`;

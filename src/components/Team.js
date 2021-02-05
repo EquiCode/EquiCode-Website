@@ -101,7 +101,7 @@ export default function CardComp() {
                   {member.subtitle}
                 </CardSubtitle>
                 <CardText className="CardText">
-                  {member.text}
+                  {/* {member.text} */}
                   <img src={insta} alt="" className="icon insta" />
                   <img src={twitter} alt="" className="icon twitter" />
                   <img src={linkedin} alt="" className="icon linkedin" />
@@ -116,7 +116,6 @@ export default function CardComp() {
 }
 const StyledTeam = styled.div`
   background: #f6b230;
-  overflow: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,55 +140,63 @@ const StyledTeam = styled.div`
     padding: 0.3rem;
   }
   .card {
-    margin: 2%;
+    margin: 1.5rem;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     background: #f4f7ff;
-    transition: all 0.9s ease-in-out;
     border-radius: 16px;
     overflow: hidden;
-    height: 19rem;
-    width: 19rem;
+    height: 16rem;
+    width: 16rem;
   }
   .icon {
     visibility: hidden;
-  }
+    margin-top: -20px;
 
-  .container:hover .card:hover {
-    transform: scale(1);
-    opacity: 1;
-    filter: blur(0px);
+    height: 2.5rem;
+  }
+  .insta {
+  }
+  .card:hover {
+    transform: scale(1.1);
+    transition-duration: 1.5s;
     background: black;
     color: #f6b230;
   }
-  .container:hover .card:hover .Team {
+  .card:hover .Team {
     background: #f6b230;
     color: #000;
   }
-  .container:hover .card:hover .icon {
+  .card:hover .icon {
     visibility: visible;
   }
-  .container:hover .card:hover .CardText {
+  .card:hover .CardText {
     visibility: hidden;
   }
-  .container:hover .card {
-    filter: blur(1px);
-    transform: scale(0.7);
+  .card:hover .CardSubTitle {
+    visibility: hidden;
   }
-
   .CardImg {
-    height: 35%;
-    width: 35%;
+    height: 45%;
+    width: 45%;
     border-radius: 50%;
-    margin: 5% auto 2% auto;
+    margin: 5% auto auto;
+    border: 1px black solid;
   }
   .CardBody {
-    margin: 1% auto;
+    margin: 0 auto;
+
+    padding: 1px;
   }
   .CardTitle,
   .CardSubTitle,
   .CardText {
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    overflow: hidden;
+    margin: 0;
     align-items: center;
+    justify-content: center;
+  }
+  .CardText {
   }
 `;

@@ -30,7 +30,7 @@ export default class Testimonials extends Component {
                     Tacos pinterest fanny pack venmo, post-ironic heirloom
                     try-hard pabst authentic iceland.
                   </p>
-                  <a class="inline-flex items-center">
+                  <a href="www.google.co.in" class="inline-flex items-center">
                     <img
                       alt="testimonial"
                       src="https://dummyimage.com/106x106"
@@ -61,7 +61,7 @@ export default class Testimonials extends Component {
                     Tacos pinterest fanny pack venmo, post-ironic heirloom
                     try-hard pabst authentic iceland.
                   </p>
-                  <a class="inline-flex items-center">
+                  <a href="www.google.co.in" class="inline-flex items-center">
                     <img
                       alt="testimonial"
                       src="https://dummyimage.com/107x107"

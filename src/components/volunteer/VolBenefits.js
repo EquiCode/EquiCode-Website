@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import image from "../../vector/about.svg";
+// import image from "../../vector/about.svg";
 
 export default function VolBenefits() {
   return (

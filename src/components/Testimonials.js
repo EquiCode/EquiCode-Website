@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import comma from "../icons/quote.svg";
-import image from "../vector/testimonial.svg";
+// import comma from "../icons/quote.svg";
+// import image from "../vector/testimonial.svg";
 
 export default class Testimonials extends Component {
   render() {

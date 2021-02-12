@@ -6,8 +6,8 @@ import AboutUs from "./components/Aboutus";
 
 import Events from "./components/Events";
 import Footer from "./components/Footer";
-import Volunteer from "./components/Volunteer";
-import Team from "./components/Team";
+import Volunteer from "./pages/Volunteer";
+import Team from "./pages/Team";
 import Testimonials from "./components/Testimonials";
 // import Sponsors from "./components/Sponsors";
 
@@ -21,11 +21,8 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route path="/about" component={AboutUs} />
           {/* <Route path="/contactus" component={Contactus} /> */}
           <Route path="/events" component={Events} />
-          <Route path="/testimonials" component={Testimonials} />
-          <Route path="/footer" component={Footer} />
           <Route path="/team" component={Team} />
           <Route path="/volunteer" component={Volunteer} />
         </Switch>

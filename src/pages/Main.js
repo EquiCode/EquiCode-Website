@@ -15,10 +15,8 @@ export default function Main() {
       <Home />
       <AboutUs />
       <CurrentEvent />
-      {/* <Contactus /> */}
       <Testimonials />
       <Sponsors />
-      {/* <Footer /> */}
       <JoinUs />
     </MainComponent>
   );

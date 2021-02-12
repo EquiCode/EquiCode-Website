@@ -4,6 +4,7 @@ import profile from "../images/profile.jpg";
 import insta from "../icons/insta.svg";
 import twitter from "../icons/twitter.svg";
 import linkedin from "../icons/linkedin.svg";
+import {generateMedia} from 'styled-media-query';
 import {
   Card,
   CardImg,
@@ -114,12 +115,21 @@ export default function CardComp() {
     </StyledTeam>
   );
 }
+
+// Media Query
+const customMedia = generateMedia({
+  smDesktop: '1440px',
+  tablet: '960px',
+
+})
+
+
 const StyledTeam = styled.div`
   background: #f6b230;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   .container {
     border-radius: 24px;
     display: flex;
@@ -127,7 +137,13 @@ const StyledTeam = styled.div`
     flex-wrap: wrap;
     min-height: 70%;
     min-width: 90%;
-    margin-top: 25rem;
+    justify-content:space-between;
+    // gap:1.5rem;
+    // margin-top: 25rem;
+    ${customMedia.lessThan('tablet')`
+      align-items:center;
+      justify-content:center;
+  `}
   }
   .Team {
     background: #000;
@@ -140,13 +156,19 @@ const StyledTeam = styled.div`
     padding: 0.3rem;
   }
   .card {
-    margin: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     background: #f4f7ff;
     border-radius: 16px;
     overflow: hidden;
     height: 16rem;
     width: 16rem;
+    ${customMedia.greaterThan('tablet')`
+      margin-top:0;
+      margin-bottom:0;
+      margin:1.5rem;
+  `}
   }
   .icon {
     visibility: hidden;

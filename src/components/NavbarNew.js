@@ -31,7 +31,7 @@ export default function NavbarNew() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="cnav" href="#about">
+              <NavLink className="cnav" href="/#about">
                 About us
               </NavLink>
             </NavItem>
@@ -46,7 +46,7 @@ export default function NavbarNew() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="cnav" href="/#contactus">
+              <NavLink className="cnav" href="/#sponsors">
                 Contact us
               </NavLink>
             </NavItem>

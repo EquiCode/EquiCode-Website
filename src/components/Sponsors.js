@@ -35,7 +35,7 @@ export default function Sponsors() {
           </div>
         </div>
         <div class="p-2 w-full">
-          <button class="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">Button</button>
+          <button class="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg" onClick={handleSubmit}>Button</button>
         </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
           <a href="https://equicode-amity.netlify.app" class="text-yellow-500">example@email.com</a>

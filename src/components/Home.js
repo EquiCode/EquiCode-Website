@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import vector from "../vector/home2.svg";
 import { Button } from "reactstrap";
-import { generateMedia } from 'styled-media-query';
+import { generateMedia } from "styled-media-query";
 class Home extends Component {
   render() {
     return (
@@ -33,10 +33,9 @@ export default Home;
 
 // Media Query
 const customMedia = generateMedia({
-  smDesktop: '1440px',
-  tablet: '960px',
-
-})
+  smDesktop: "1440px",
+  tablet: "960px",
+});
 
 const HomeContainer = styled.div`
   background: #fef3db;
@@ -44,65 +43,64 @@ const HomeContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  ${customMedia.lessThan('tablet')`
+  ${customMedia.lessThan("tablet")`
       flex-flow: row wrap;
       height:fit-content;
   `}
-  .content{
-    margin-top:5rem;
-    width:30rem;
-    align-items:center;
-    ${customMedia.lessThan('tablet')`
+  .content {
+    margin-top: 5rem;
+    width: 30rem;
+    align-items: center;
+    ${customMedia.lessThan("tablet")`
       padding:2rem;
       font-size:1rem;
       margin-top:2rem;
     `}
   }
-  .vector{
-    margin-top:5rem;
+  .vector {
+    margin-top: 5rem;
     // width:40rem;
-    display:flex;
-    width:fit-content;
-    align-items:center;
-    ${customMedia.lessThan('tablet')`
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    ${customMedia.lessThan("tablet")`
       margin-bottom:2rem;
     `}
   }
-  .image{
-    width:40rem;
-    ${customMedia.lessThan('tablet')`
+  .image {
+    width: 50rem;
+    ${customMedia.lessThan("tablet")`
       width:25rem;
     `}
   }
 
   .heading {
-      font-size: 3rem;
-      font-weight: 800;
-      border-bottom: 10px solid coral;
-      border-bottom-length: 4rem;
-      line-height: 4rem;
-      ${customMedia.lessThan('tablet')`
+    font-size: 3rem;
+    font-weight: 800;
+    border-bottom: 10px solid coral;
+    border-bottom-length: 4rem;
+    line-height: 4rem;
+    ${customMedia.lessThan("tablet")`
       font-size:2.5rem;
     `}
-    }
-    .header {
-        font-size: 1.5rem;
-        font-weight: 800;
-        margin-bottom: 1.5rem;
-        ${customMedia.lessThan('tablet')`
+  }
+  .header {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    ${customMedia.lessThan("tablet")`
       font-size:2rem;
     `}
-      }
-      #button{
-        background: coral;
-        border:none;
-        margin-top:2rem;
-      }
-      .intro{
-        margin-top:2rem;
-        line-height:1.5rem;
-      }
-
+  }
+  #button {
+    background: coral;
+    border: none;
+    margin-top: 2rem;
+  }
+  .intro {
+    margin-top: 2rem;
+    line-height: 1.5rem;
+  }
 
   // flex-wrap:wrap;
   // align-items: center;
@@ -117,7 +115,7 @@ const HomeContainer = styled.div`
   // .image {
   //   height: 57rem;
   //   width: 60rem;
-  //   ${customMedia.lessThan('tablet')`
+  //   ${customMedia.lessThan("tablet")`
   //     height:20rem;
   //   `}
   // }

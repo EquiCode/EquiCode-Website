@@ -33,15 +33,15 @@ class Aboutus extends Component {
     // ];
     return (
       <StyledAbout id="about">
-        <section class="text-gray-600 body-font overflow-hidden">
-          <div class="container px-5 py-24 mx-auto">
-            <div class="-my-8 divide-y-2 divide-gray-100">
-              <div class="py-8 flex flex-wrap md:flex-nowrap">
-                <div class="md:flex-grow">
-                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
+        <section className="text-gray-600 body-font overflow-hidden">
+          <div className="container px-5 py-24 mx-auto">
+            <div className="-my-8 divide-y-2 divide-gray-100">
+              <div className="py-8 flex flex-wrap md:flex-nowrap">
+                <div className="md:flex-grow">
+                  <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
                     Bitters hashtag waistcoat fashion axe chia unicorn
                   </h2>
-                  <p class="leading-relaxed">
+                  <p className="leading-relaxed">
                     Glossier echo park pug, church-key sartorial biodiesel
                     vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
                     moon party messenger bag selfies, poke vaporware kombucha
@@ -49,12 +49,12 @@ class Aboutus extends Component {
                   </p>
                 </div>
               </div>
-              <div class="py-8 flex flex-wrap md:flex-nowrap">
-                <div class="md:flex-grow">
-                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
+              <div className="py-8 flex flex-wrap md:flex-nowrap">
+                <div className="md:flex-grow">
+                  <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
                     Meditation bushwick direct trade taxidermy shaman
                   </h2>
-                  <p class="leading-relaxed">
+                  <p className="leading-relaxed">
                     Glossier echo park pug, church-key sartorial biodiesel
                     vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
                     moon party messenger bag selfies, poke vaporware kombucha
@@ -62,12 +62,12 @@ class Aboutus extends Component {
                   </p>
                 </div>
               </div>
-              <div class="py-8 flex flex-wrap md:flex-nowrap">
-                <div class="md:flex-grow">
-                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
+              <div className="py-8 flex flex-wrap md:flex-nowrap">
+                <div className="md:flex-grow">
+                  <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
                     Woke master cleanse drinking vinegar salvia
                   </h2>
-                  <p class="leading-relaxed">
+                  <p className="leading-relaxed">
                     Glossier echo park pug, church-key sartorial biodiesel
                     vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
                     moon party messenger bag selfies, poke vaporware kombucha

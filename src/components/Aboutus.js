@@ -6,29 +6,30 @@ class Aboutus extends Component {
   render() {
     const Factors = [
       {
-        topic: "Encouraging Equality",
+        {
+        topic: "Inclusive Community",
         info:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+          "Diversity is a fact, but being Inclusive is an original choice",
         image: cardimg,
       },
       {
-        topic: "Encouraging Equality",
+        topic: "Diverse Learning Environment",
         info:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+          "An unbiased tech-based community to unite and support people",
         image: cardimg,
       },
       {
-        topic: "Encouraging Equality",
+        topic: "Beginner-centric culture",
         info:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+          "Help Tech-novice develop the skills to promote themselves effectively",
         image: cardimg,
       },
-      {
-        topic: "Encouraging Equality",
-        info:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-        image: cardimg,
-      },
+      // {
+      //   topic: "",
+      //   info:
+      //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      //   image: cardimg,
+      // },
     ];
     return (
       <StyledAbout id="about">

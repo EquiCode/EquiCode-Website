@@ -1,36 +1,36 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import cardimg from "../icons/process.svg";
+// import cardimg from "../icons/process.svg";
 
 class Aboutus extends Component {
   render() {
-    const Factors = [
+    // const Factors = [
       
-        {
-        topic: "Inclusive Community",
-        info:
-          "Diversity is a fact, but being Inclusive is an original choice",
-        image: cardimg,
-      },
-      {
-        topic: "Diverse Learning Environment",
-        info:
-          "An unbiased tech-based community to unite and support people",
-        image: cardimg,
-      },
-      {
-        topic: "Beginner-centric culture",
-        info:
-          "Help Tech-novice develop the skills to promote themselves effectively",
-        image: cardimg,
-      },
-      // {
-      //   topic: "",
-      //   info:
-      //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-      //   image: cardimg,
-      // },
-    ];
+    //     {
+    //     topic: "Inclusive Community",
+    //     info:
+    //       "Diversity is a fact, but being Inclusive is an original choice",
+    //     image: cardimg,
+    //   },
+    //   {
+    //     topic: "Diverse Learning Environment",
+    //     info:
+    //       "An unbiased tech-based community to unite and support people",
+    //     image: cardimg,
+    //   },
+    //   {
+    //     topic: "Beginner-centric culture",
+    //     info:
+    //       "Help Tech-novice develop the skills to promote themselves effectively",
+    //     image: cardimg,
+    //   },
+    //   // {
+    //   //   topic: "",
+    //   //   info:
+    //   //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    //   //   image: cardimg,
+    //   // },
+    // ];
     return (
       <StyledAbout id="about">
         <section class="text-gray-600 body-font">

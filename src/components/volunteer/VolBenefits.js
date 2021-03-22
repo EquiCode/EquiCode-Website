@@ -110,9 +110,5 @@ const VolContainer = styled.div`
   .vol-card:hover {
     transform: scale(1.2);
     transition-duration: 1.5s;
-    border: none;
-    box-shadow: -5px 8px 36px 15px rgba(245, 158, 11, 0.71);
-    -webkit-box-shadow: -5px 8px 36px 15px rgba(245, 158, 11, 0.71);
-    -moz-box-shadow: -5px 8px 36px 15px rgba(245, 158, 11, 0.71);
   }
 `;

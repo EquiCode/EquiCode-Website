@@ -50,6 +50,13 @@ export default function NavbarNew() {
                 Contact us
               </NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink className="cnav" href="/volunteer">
+                <button class="flex text-base text-white bg-black border-0 py-2 px-2 focus:outline-none hover:bg-yellow-900 rounded">
+                  Apply Here
+                </button>
+              </NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

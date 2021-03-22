@@ -8,14 +8,12 @@ class Home extends Component {
     return (
       <HomeContainer>
         <div className="content">
-          <div className="header">simply dummy text</div>
+          <div className="header">Encouraging Equal Learning</div> 
           <div className="heading">
-            of the printing and typesetting industry
+            EquiCode
           </div>
           <div className="intro">
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley of type and scrambled
-            it to make a type specimen book it to make a type specimen book.
+            EquiCode is a wholsesome community focusing on the holistic development of beginners and veterans alike to provide equal opportunities for everyone to learn, grow and build. We aspire to cultivate a united diverse-learning environment. 
           </div>
           <Button size="lg" id="button">
             Join us

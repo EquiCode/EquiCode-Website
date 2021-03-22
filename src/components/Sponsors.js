@@ -12,7 +12,7 @@ export default function Sponsors() {
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">For any queries, Contact us here:</p>
     </div>
     <div class="lg:w-1/2 md:w-2/3 mx-auto">
       <div class="flex flex-wrap -m-2">
@@ -38,7 +38,7 @@ export default function Sponsors() {
           <button class="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg" onClick={handleSubmit}>Button</button>
         </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-          <a href="https://equicode-amity.netlify.app" class="text-yellow-500">example@email.com</a>
+          <a href="https://equicode-amity.netlify.app" class="text-yellow-500">equicodeteam@email.com</a>
           <p class="leading-normal my-5">49 Smith St.
             <br />Saint Cloud, MN 56301
           </p>

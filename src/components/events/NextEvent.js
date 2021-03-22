@@ -24,13 +24,10 @@ export default function NextEvent() {
           <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
             <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0 content">
               <h1 class="title-font font-medium text-3xl text-gray-900">
-                Slow-carb next level shoindcgoitch ethical authentic, poko
-                scenester
+                We love to collaborate! 
               </h1>
               <p class="leading-relaxed mt-4">
-                Poke slow-carb mixtape knausgaard, typewriter street art
-                gentrify hammock starladder roathse. Craies vegan tousled etsy
-                austin.
+                Let us know if you would like to collaborate with us for any event, session or initiative. We would love to join in.
               </p>
             </div>
             <div class="lg:w-2/6 md:w-1/2 form-color rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
@@ -73,9 +70,9 @@ export default function NextEvent() {
                   Button
                 </button>
               </form>
-              <p class="text-xs text-gray-500 mt-3">
+    { /* <p class="text-xs text-gray-500 mt-3">
                 Literally you probably haven't heard of them jean shorts.
-              </p>
+              </p> */}
             </div>
           </div>
         </section>

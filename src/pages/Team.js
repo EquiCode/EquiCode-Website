@@ -17,7 +17,7 @@ import {
 export default function CardComp() {
   const Members = [
     {
-      title: "Khushi Sharma",
+      title: "Khushi ",
       profile: profile,
       team: "",
       subtitle: "Founder",
@@ -38,7 +38,7 @@ export default function CardComp() {
       text: "I hate CSS",
     },
     {
-      title: "Ayushi",
+      title: "Ayushi Srivastava",
       profile: profile,
       team: "Content Team",
       subtitle: "Content Lead",

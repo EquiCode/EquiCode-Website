@@ -39,6 +39,15 @@ export default function Current() {
                   src={image}
                 />
               </div>
+              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+                MLH LHD Share
+              </h2>
+              <p class="leading-relaxed text-base">
+                Join us in MLH LHD Share as we go on to continue our journey as a guild and experience the fun along!
+              </p>
+              <button class="flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-yellow-900 rounded">
+                Learn More
+              </button>
     { /* <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
                 The Catalyzer
               </h2>

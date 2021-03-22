@@ -5,46 +5,46 @@ import styled from "styled-components";
 export default function PastEvents(props) {
   const PastEvents = [
     {
-      name: "Space The Final Frontier",
+      name: "#ChooseToChallenge: IWD,21 Panel",
       about:
-        "Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.",
+        "On the special occasion of International Women’s day, EquiCode came up with #ChooseToChallenge​ panel discussion to throw light on breaking the biases and empowering women.",
       image: image,
-      link: "https://youtu.be/pluVTbdfSnk",
+      link: "https://youtu.be/0wPc3WH8MJw",
     },
     {
-      name: "Space The Final Frontier",
+      name: "International Women's Day 2021",
       about:
-        "Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.",
+        "Celebrating International Women's Day 2021, we had some of the tech experts sharing importance of women in their lives. This is a special vidoe for the Real Architects of Society.",
       image: image,
-      link: "https://youtu.be/pluVTbdfSnk",
+      link: "https://youtu.be/KksVuTZ0nDc",
     },
     {
-      name: "Space The Final Frontier",
+      name: "Generation Google Scholarship- Asia Pacific",
       about:
-        "Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.",
+        "Generation Google Scholarship for women in computer science was established to help aspiring students pursuing computer science degrees excel in technology and become leaders in the field.",
       image: image,
-      link: "https://youtu.be/pluVTbdfSnk",
+      link: "https://youtu.be/YzBJxCpPZS8",
     },
     {
-      name: "Space The Final Frontier",
+      name: "A Winning Resume wih Madhav Bahl",
       about:
-        "Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.",
+        "A strong resume can help you clearly identify and communicate what differentiates you from your job-seeking competitors. EquiCode brings Madhav Bahl to help us create a Winning Resume. ",
       image: image,
-      link: "https://youtu.be/pluVTbdfSnk",
+      link: "https://youtu.be/bR_d1BwWH9c",
     },
     {
-      name: "Space The Final Frontier",
+      name: "Grand Finale with the First GitHub Star of the Year : Eddie Jaoude",
       about:
-        "Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.",
+        "EquiCode is thrilled to have Eddie Jaoude join us putting into words his experiences in #DevRel​ , opensource and much more and embark an end tto our Roadmap series: From Newbie to Pro.",
       image: image,
-      link: "https://youtu.be/pluVTbdfSnk",
+      link: "https://youtu.be/G6ZfLQVpOhQ",
     },
     {
-      name: "Space The Final Frontier",
+      name: "Looking Beyond Tech",
       about:
-        "Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.",
+        "EquiCode has got something for our audience to navigate an overwhelming amount of information availaible for all those starting out their tech-career soon.",
       image: image,
-      link: "https://youtu.be/pluVTbdfSnk",
+      link: "https://youtu.be/dkFiyfSdIT4",
     },
   ];
 
@@ -58,12 +58,10 @@ export default function PastEvents(props) {
             </div>
             <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12 ">
               <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">
-                Space The Final Frontier
+                Past Specifics
               </h1>
               <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-                Street art subway tile salvia four dollar toast bitters selfies
-                quinoa yuccie synth meditation iPhone intelligentsia prism tofu.
-                Viral gochujang bitters dreamcatcher.
+                EquiCode has collaborated with many amazing speakers out there, to put in the idea of encouraging Equal Learning and helping our audience in building up a brand for themselves. 
               </p>
             </div>
           </div>

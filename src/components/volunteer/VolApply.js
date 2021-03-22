@@ -35,7 +35,7 @@ const Apply = styled.div`
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 65vh;
+  height: 70vh;
   .content {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);

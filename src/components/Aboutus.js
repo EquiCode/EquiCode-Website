@@ -1,67 +1,84 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Container, Row, Col } from "reactstrap";
-import { Button } from "reactstrap";
-import image from "../vector/about.svg";
 import cardimg from "../icons/process.svg";
-import { generateMedia } from 'styled-media-query';
+
 class Aboutus extends Component {
   render() {
     const Factors = [
-      {
-        topic: "Encouraging Equality",
+      
+        {
+        topic: "Inclusive Community",
         info:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+          "Diversity is a fact, but being Inclusive is an original choice",
         image: cardimg,
       },
       {
-        topic: "Encouraging Equality",
+        topic: "Diverse Learning Environment",
         info:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+          "An unbiased tech-based community to unite and support people",
         image: cardimg,
       },
       {
-        topic: "Encouraging Equality",
+        topic: "Beginner-centric culture",
         info:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+          "Help Tech-novice develop the skills to promote themselves effectively",
         image: cardimg,
       },
-      {
-        topic: "Encouraging Equality",
-        info:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-        image: cardimg,
-      },
+      // {
+      //   topic: "",
+      //   info:
+      //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      //   image: cardimg,
+      // },
     ];
     return (
       <StyledAbout id="about">
-        <Container fluid={true}>
-          <Row className="row">
-            <Col className="content">
-              <div className="heading">I have no idea what to write here.</div>
-              {Factors.map((factor) => {
-                return (
-                  <Container className="themed-container" fluid={true}>
-                    <img src={factor.image} alt="" className="icon" />
-                    <div className="aboutinfo">
-                      <div className="topic">{factor.topic}</div>
-                      <div className="info">{factor.info}</div>
-                    </div>
-                    <div className="on-hover">
-                      <h4 className="kk">KK</h4>
-                      <Button size="sm" id="button">
-                        Button
-                      </Button>
-                    </div>
-                  </Container>
-                );
-              })}
-            </Col>
-              <img src={image} alt="" className="image" />
-            {/* <Col className="vector">
-            </Col> */}
-          </Row>
-        </Container>
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+              <img
+                alt="feature"
+                class="object-cover object-center h-full w-full"
+                src="https://dummyimage.com/460x500"
+              />
+            </div>
+            <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+              <div class="flex flex-col mb-10 lg:items-start items-center">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                    Shooting Stars
+                  </h2>
+                  <p class="leading-relaxed text-base">
+                    Blue bottle crucifix vinyl post-ironic four dollar toast
+                    vegan taxidermy. Gastropub indxgo juice poutine.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col mb-10 lg:items-start items-center">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                    The Catalyzer
+                  </h2>
+                  <p class="leading-relaxed text-base">
+                    Blue bottle crucifix vinyl post-ironic four dollar toast
+                    vegan taxidermy. Gastropub indxgo juice poutine.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col mb-10 lg:items-start items-center">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                    Neptune
+                  </h2>
+                  <p class="leading-relaxed text-base">
+                    Blue bottle crucifix vinyl post-ironic four dollar toast
+                    vegan taxidermy. Gastropub indxgo juice poutine.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </StyledAbout>
     );
   }
@@ -69,101 +86,4 @@ class Aboutus extends Component {
 
 export default Aboutus;
 
-const customMedia = generateMedia({
-  smDesktop: '1440px',
-  tablet: '960px',
-
-})
-
-const StyledAbout = styled.div`
-  height: 120vh;
-  background: #fff;
-  padding: 4rem;
-  ${customMedia.lessThan('tablet')`
-      padding:0;
-      height:fit-content;
-      margin:0;
-  `}
-  .row{
-    ${customMedia.lessThan('tablet')`
-      display:flex;
-      flex-direction:row;
-  `}
-  }
-  .themed-container {
-    display: flex;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 24px;
-    margin: 1.2rem 0.5rem;
-    padding-right: 0;
-    width:40rem;
-    ${customMedia.lessThan('tablet')`
-      margin:1.2rem 0;
-      height:12rem;
-      width:24rem;
-      // width:auto;
-    `}
-  }
-  .on-hover {
-    background-color: #f4c629;
-    padding: 2.5rem;
-    border-top-right-radius: 24px;
-    border-bottom-right-radius: 24px;
-    border-left: 1px dashed grey;
-    visibility: hidden;
-  }
-  .kk {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 800;
-  }
-  .themed-container:hover .on-hover {
-    visibility: visible;
-  }
-  .heading {
-    font-size: 2rem;
-    font-weight: 800;
-    ${customMedia.lessThan('tablet')`
-      font-size:1.25rem;
-      width:fit-content;
-    `}
-  }
-  .content {
-    margin: 1.5rem;
-    // overflow: hidden;
-    ${customMedia.lessThan('tablet')`
-        margin:0rem;
-        // overflow:auto;
-    `}
-  }
-  .aboutinfo {
-    margin: 2rem 1rem;
-  }
-  .topic {
-    font-weight: 800;
-    font-size: 1.1rem;
-  }
-  .info {
-  }
-  #button {
-    background-color: #fa3149;
-    border: none;
-  }
-  .vector {
-    overflow: hidden;
-  }
-  .image {
-    overflow: hidden;
-    // height: 100%;
-    // width: 100%;
-    ${customMedia.lessThan('tablet')`
-      height:15rem;
-      width:auto;
-      margin:auto;
-    `}
-  }
-  .icon {
-    overflow: hidden;
-    color: coral;
-  }
-`;
+const StyledAbout = styled.div``;

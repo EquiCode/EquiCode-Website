@@ -5,7 +5,7 @@ import styled from "styled-components";
 class Aboutus extends Component {
   render() {
     // const Factors = [
-      
+
     //     {
     //     topic: "Inclusive Community",
     //     info:
@@ -24,55 +24,54 @@ class Aboutus extends Component {
     //       "Help Tech-novice develop the skills to promote themselves effectively",
     //     image: cardimg,
     //   },
-    //   // {
-    //   //   topic: "",
-    //   //   info:
-    //   //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-    //   //   image: cardimg,
-    //   // },
+    // {
+    //   topic: "",
+    //   info:
+    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    //   image: cardimg,
+    // },
     // ];
     return (
       <StyledAbout id="about">
-        <section class="text-gray-600 body-font">
-          <div class="container px-5 py-24 mx-auto flex flex-wrap">
-            <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-              <img
-                alt="feature"
-                class="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/460x500"
-              />
-            </div>
-            <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-              <div class="flex flex-col mb-10 lg:items-start items-center">
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
-                    Shooting Stars
+        <section class="text-gray-600 body-font overflow-hidden">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="-my-8 divide-y-2 divide-gray-100">
+              <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
+                    Bitters hashtag waistcoat fashion axe chia unicorn
                   </h2>
-                  <p class="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
+                  <p class="leading-relaxed">
+                    Glossier echo park pug, church-key sartorial biodiesel
+                    vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
+                    moon party messenger bag selfies, poke vaporware kombucha
+                    lumbersexual pork belly polaroid hoodie portland craft beer.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col mb-10 lg:items-start items-center">
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
-                    The Catalyzer
+              <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
+                    Meditation bushwick direct trade taxidermy shaman
                   </h2>
-                  <p class="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
+                  <p class="leading-relaxed">
+                    Glossier echo park pug, church-key sartorial biodiesel
+                    vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
+                    moon party messenger bag selfies, poke vaporware kombucha
+                    lumbersexual pork belly polaroid hoodie portland craft beer.
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col mb-10 lg:items-start items-center">
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
-                    Neptune
+              <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
+                    Woke master cleanse drinking vinegar salvia
                   </h2>
-                  <p class="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
+                  <p class="leading-relaxed">
+                    Glossier echo park pug, church-key sartorial biodiesel
+                    vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
+                    moon party messenger bag selfies, poke vaporware kombucha
+                    lumbersexual pork belly polaroid hoodie portland craft beer.
                   </p>
                 </div>
               </div>

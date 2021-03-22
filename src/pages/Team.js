@@ -4,7 +4,7 @@ import profile from "../images/profile.jpg";
 import insta from "../icons/insta.svg";
 import twitter from "../icons/twitter.svg";
 import linkedin from "../icons/linkedin.svg";
-import {generateMedia} from 'styled-media-query';
+import { generateMedia } from "styled-media-query";
 import {
   Card,
   CardImg,
@@ -19,14 +19,14 @@ export default function CardComp() {
     {
       title: "Khushi Sharma",
       profile: profile,
-      team: "",
+      team: "Founder",
       subtitle: "Founder",
       text: "I hate CSS",
     },
     {
       title: "Akshat Rana",
       profile: profile,
-      team: "Content Team",
+      team: "Co-Founder",
       subtitle: "Co-Founder",
       text: "I hate CSS",
     },
@@ -86,7 +86,6 @@ export default function CardComp() {
       subtitle: "Technical Associate",
       text: "I hate CSS",
     },
-    
   ];
   return (
     <StyledTeam>
@@ -126,11 +125,9 @@ export default function CardComp() {
 
 // Media Query
 const customMedia = generateMedia({
-  smDesktop: '1440px',
-  tablet: '960px',
-
-})
-
+  smDesktop: "1440px",
+  tablet: "960px",
+});
 
 const StyledTeam = styled.div`
   background: #f6b230;
@@ -145,10 +142,10 @@ const StyledTeam = styled.div`
     flex-wrap: wrap;
     min-height: 70%;
     min-width: 90%;
-    justify-content:space-between;
+    justify-content: space-evenly;
     // gap:1.5rem;
     // margin-top: 25rem;
-    ${customMedia.lessThan('tablet')`
+    ${customMedia.lessThan("tablet")`
       align-items:center;
       justify-content:center;
   `}
@@ -172,7 +169,7 @@ const StyledTeam = styled.div`
     overflow: hidden;
     height: 16rem;
     width: 16rem;
-    ${customMedia.greaterThan('tablet')`
+    ${customMedia.greaterThan("tablet")`
       margin-top:0;
       margin-bottom:0;
       margin:1.5rem;
@@ -188,7 +185,7 @@ const StyledTeam = styled.div`
   }
   .card:hover {
     transform: scale(1.1);
-    transition-duration: 1.5s;
+    transition-duration: 0.5s;
     background: black;
     color: #f6b230;
   }

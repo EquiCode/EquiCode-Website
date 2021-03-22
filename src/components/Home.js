@@ -8,15 +8,18 @@ class Home extends Component {
     return (
       <HomeContainer>
         <div className="content">
-          <div className="header">Encouraging Equal Learning</div> 
-          <div className="heading">
-            EquiCode
-          </div>
+          <div className="header">Encouraging Equal Learning</div>
+          <div className="heading">EquiCode</div>
           <div className="intro">
-            EquiCode is a wholsesome community focusing on the holistic development of beginners and veterans alike to provide equal opportunities for everyone to learn, grow and build. We aspire to cultivate a united diverse-learning environment. 
+            EquiCode is a wholsesome community focusing on the holistic
+            development of beginners and veterans alike to provide equal
+            opportunities for everyone to learn, grow and build. We aspire to
+            cultivate a united diverse-learning environment.
           </div>
           <Button size="lg" id="button">
-            Join us
+            <a href="https://www.google.com/" className=" text-white">
+              Join us
+            </a>
           </Button>{" "}
         </div>
         <div className="vector">

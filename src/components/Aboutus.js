@@ -38,30 +38,30 @@ class Aboutus extends Component {
             <div className="-my-8 divide-y-2 divide-gray-100">
               <div className="py-8 flex flex-wrap md:flex-nowrap">
                 <div className="md:flex-grow">
-                  <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                  <h2 style="text-align:center;" className="text-2xl font-medium text-gray-900 title-font mb-2">
                     Inclusive Community
                   </h2>
-                  <p className="leading-relaxed">
+                  <p style="text-align:center;" className="leading-relaxed">
                     Diversity is a fact, but being Inclusive is an original choice
                   </p>
                 </div>
               </div>
               <div className="py-8 flex flex-wrap md:flex-nowrap">
                 <div className="md:flex-grow">
-                  <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                  <h2 style="text-align:center;" className="text-2xl font-medium text-gray-900 title-font mb-2">
                     Beginner-centric culture
                   </h2>
-                  <p className="leading-relaxed">
+                  <p style="text-align:center;" className="leading-relaxed">
                     Help Tech-novice develop the skills to promote themselves effectively
                   </p>
                 </div>
               </div>
               <div className="py-8 flex flex-wrap md:flex-nowrap">
                 <div className="md:flex-grow">
-                  <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                  <h2 style="text-align:center;" className="text-2xl font-medium text-gray-900 title-font mb-2">
                     Diverse Learning Environment
                   </h2>
-                  <p className="leading-relaxed">
+                  <p style="text-align:center;" className="leading-relaxed">
                     An unbiased tech-based community to unite and support people
                   </p>
                 </div>

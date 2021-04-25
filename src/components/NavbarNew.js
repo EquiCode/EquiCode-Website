@@ -51,8 +51,12 @@ export default function NavbarNew() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="cnav" href="/volunteer">
-                  Apply Here
+              <NavLink
+                className="cnav"
+                href="/volunteer"
+                style={{ border: "1px solid black", borderRadius: "8px" }}
+              >
+                Apply Here
               </NavLink>
             </NavItem>
           </Nav>

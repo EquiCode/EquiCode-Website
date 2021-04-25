@@ -33,7 +33,8 @@ export default function PastEvents(props) {
       link: "https://youtu.be/bR_d1BwWH9c",
     },
     {
-      name: "Grand Finale with the First GitHub Star of the Year : Eddie Jaoude",
+      name:
+        "Grand Finale with the First GitHub Star of the Year : Eddie Jaoude",
       about:
         "EquiCode is thrilled to have Eddie Jaoude join us putting into words his experiences in #DevRel​ , opensource and much more and embark an end tto our Roadmap series: From Newbie to Pro.",
       image: image,
@@ -61,7 +62,9 @@ export default function PastEvents(props) {
                 Past Specifics
               </h1>
               <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-                EquiCode has collaborated with many amazing speakers out there, to put in the idea of encouraging Equal Learning and helping our audience in building up a brand for themselves. 
+                EquiCode has collaborated with many amazing speakers out there,
+                to put in the idea of encouraging Equal Learning and helping our
+                audience in building up a brand for themselves.
               </p>
             </div>
           </div>
@@ -69,7 +72,7 @@ export default function PastEvents(props) {
           <div className="flex flex-wrap sm:-m-4 justify-center -mt-4">
             {PastEvents.map((event) => {
               return (
-                <div className="p-4 md:w-1/3 sm:mb-0 mb-6 max-w-sm cards ">
+                <div className="p-4 md:w-1/3 sm:mb-0 mb-6 cards ">
                   <div className="rounded-lg h-64 overflow-hidden images">
                     <img
                       alt="content"
@@ -80,7 +83,9 @@ export default function PastEvents(props) {
                   <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
                     {event.name}
                   </h2>
-                  <p className="text-base leading-relaxed mt-2">{event.about}</p>
+                  <p className="text-base leading-relaxed mt-2">
+                    {event.about}
+                  </p>
                   <a
                     className="text-black inline-flex items-center mt-3"
                     href={event.link}

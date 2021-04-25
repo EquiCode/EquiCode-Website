@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-// import cardimg from "../icons/process.svg";
 
 class Aboutus extends Component {
   render() {

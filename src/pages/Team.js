@@ -154,7 +154,8 @@ const StyledTeam = styled.div`
     background: #000;
     color: #f6b230;
     border-radius: 0px 16px 16px 0px;
-    width: 7rem;
+    // width:7rem;
+    width: fit-content;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0.8rem;
@@ -185,7 +186,7 @@ const StyledTeam = styled.div`
   }
   .card:hover {
     transform: scale(1.1);
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     background: black;
     color: #f6b230;
   }

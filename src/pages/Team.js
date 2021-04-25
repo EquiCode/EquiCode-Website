@@ -17,7 +17,7 @@ import {
 export default function CardComp() {
   const Members = [
     {
-      title: "Khushi Sharma ",
+      title: "Khushi ",
       profile: profile,
       team: "Founder",
       subtitle: "Founder",
@@ -33,56 +33,56 @@ export default function CardComp() {
     {
       title: "Siddharth Mehta",
       profile: profile,
-      team: "Community Lead",
+      team: "Content Team",
       subtitle: "Community Lead",
       text: "I hate CSS",
     },
     {
       title: "Ayushi Srivastava",
       profile: profile,
-      team: "Content Lead",
+      team: "Content Team",
       subtitle: "Content Lead",
       text: "I hate CSS",
     },
     {
       title: "Gautam Jain",
       profile: profile,
-      team: "Graphic Designer",
+      team: "Content Team",
       subtitle: "Graphic Designer",
       text: "I hate CSS",
     },
     {
-      title: "Raghav Agarwal",
+      title: "Raghav Aggarwal",
       profile: profile,
-      team: "Graphic Designer",
+      team: "Content Team",
       subtitle: "Graphic Designer",
       text: "I hate CSS",
     },
     {
       title: "Shaurya Guliani",
       profile: profile,
-      team: "Community Manager",
+      team: "Content Team",
       subtitle: "Community Manager",
       text: "I hate CSS",
     },
     {
       title: "Mehak Agrawal",
       profile: profile,
-      team: "Content Writer",
+      team: "Content Team",
       subtitle: "Content Writer",
       text: "I hate CSS",
     },
     {
       title: "Pratham Krishna",
       profile: profile,
-      team: "Social Media Manager",
+      team: "Content Team",
       subtitle: "Social Media Manager",
       text: "I hate CSS",
     },
     {
       title: "Saumya Ranjan Nayak",
       profile: profile,
-      team: "Technical Associate",
+      team: "Content Team",
       subtitle: "Technical Associate",
       text: "I hate CSS",
     },
@@ -154,8 +154,8 @@ const StyledTeam = styled.div`
     background: #000;
     color: #f6b230;
     border-radius: 0px 16px 16px 0px;
-    // width:7rem;
-    width: fit-content;
+    // width: 7rem;
+    width:fit-content;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0.8rem;

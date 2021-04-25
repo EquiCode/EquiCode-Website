@@ -12,8 +12,8 @@ export default function Current() {
       </div>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap -mx-4 -mb-10 text-center">
-            <div className="sm:w-1/2 mb-10 px-4">
+          <div className="flex flex-wrap justify-center text-center">
+            <div className="sm:w-1/2 mb-10 max-w-md mx-6">
               <div className="rounded-lg h-64 overflow-hidden images">
                 <img
                   alt="content"
@@ -32,7 +32,7 @@ export default function Current() {
                 Learn More
               </button>
             </div>
-            <div className="sm:w-1/2 mb-10 px-4">
+            <div className="sm:w-1/2 mb-10 max-w-md mx-6">
               <div className="rounded-lg h-64 overflow-hidden images">
                 <img
                   alt="content"

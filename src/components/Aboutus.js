@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+import event from "../images/events.jpg";
 class Aboutus extends Component {
   render() {
     return (
@@ -19,48 +19,48 @@ class Aboutus extends Component {
             </div>
             <div class="flex flex-wrap md:-m-2 -m-1">
               <div class="flex flex-wrap w-1/2">
-                <div class="md:p-2 p-1 w-1/2">
+                <div class="md:p-2 p-1 w-1/2 transform hover:opacity-50">
                   <img
                     alt="gallery"
                     class="w-full object-cover h-full object-center block"
-                    src="https://dummyimage.com/500x300"
+                    src={event}
                   />
                 </div>
-                <div class="md:p-2 p-1 w-1/2">
+                <div class="md:p-2 p-1 w-1/2 transform hover:opacity-50">
                   <img
                     alt="gallery"
                     class="w-full object-cover h-full object-center block"
-                    src="https://dummyimage.com/501x301"
+                    src={event}
                   />
                 </div>
-                <div class="md:p-2 p-1 w-full">
+                <div class="md:p-2 p-1 w-full transform hover:opacity-50 ">
                   <img
                     alt="gallery"
                     class="w-full h-full object-cover object-center block"
-                    src="https://dummyimage.com/600x360"
+                    src={event}
                   />
                 </div>
               </div>
-              <div class="flex flex-wrap w-1/2">
+              <div class="flex flex-wrap w-1/2 transform hover:opacity-50">
                 <div class="md:p-2 p-1 w-full">
                   <img
                     alt="gallery"
                     class="w-full h-full object-cover object-center block"
-                    src="https://dummyimage.com/601x361"
+                    src={event}
                   />
                 </div>
-                <div class="md:p-2 p-1 w-1/2">
+                <div class="md:p-2 p-1 w-1/2 transform hover:opacity-50">
                   <img
                     alt="gallery"
                     class="w-full object-cover h-full object-center block"
-                    src="https://dummyimage.com/502x302"
+                    src={event}
                   />
                 </div>
-                <div class="md:p-2 p-1 w-1/2">
+                <div class="md:p-2 p-1 w-1/2 transform hover:opacity-50">
                   <img
                     alt="gallery"
                     class="w-full object-cover h-full object-center block"
-                    src="https://dummyimage.com/503x303"
+                    src={event}
                   />
                 </div>
               </div>

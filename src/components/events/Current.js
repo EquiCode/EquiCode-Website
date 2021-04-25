@@ -32,7 +32,7 @@ export default function Current() {
                 Learn More
               </button>
             </div>
-            <div className="sm:w-1/2 mb-10 px-4">
+    { /* <div className="sm:w-1/2 mb-10 px-4">
               <div className="rounded-lg h-64 overflow-hidden images">
                 <img
                   alt="content"
@@ -50,7 +50,7 @@ export default function Current() {
               <button className="flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-yellow-900 rounded">
                 Learn More
               </button>
-            </div>
+            </div> */ }
           </div>
         </div>
       </section>

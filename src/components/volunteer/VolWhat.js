@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../images/VolAbout2.png";
+import image from "../../images/VolAbout2.webp";
 import styled from "styled-components";
 
 export default function VolWhat() {

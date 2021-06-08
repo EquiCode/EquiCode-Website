@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import event from "../images/events.jpg";
+import event from "../images/events.webp";
 class Aboutus extends Component {
   render() {
     return (

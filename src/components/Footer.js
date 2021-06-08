@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Logo from "../images/logo.png";
+import Logo from "../images/logo.webp";
 export default class Footer extends Component {
   render() {
     return (

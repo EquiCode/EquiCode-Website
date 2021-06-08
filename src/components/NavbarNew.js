@@ -10,7 +10,7 @@ import {
 } from "reactstrap";
 import styled from "styled-components";
 
-import Logo from "../images/logo.png";
+import Logo from "../images/logo.webp";
 
 export default function NavbarNew() {
   const [isOpen, setIsOpen] = useState(false);

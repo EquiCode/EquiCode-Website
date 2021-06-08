@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import profile from "../images/profile.jpg";
+import profile from "../images/profile.webp";
 import insta from "../icons/insta.svg";
 import twitter from "../icons/twitter.svg";
 import linkedin from "../icons/linkedin.svg";
@@ -143,7 +143,7 @@ const StyledTeam = styled.div`
     min-height: 70%;
     min-width: 90%;
     justify-content: space-evenly;
-    // gap:1.5rem;
+    // gap: 1.5rem;
     // margin-top: 25rem;
     ${customMedia.lessThan("tablet")`
       align-items:center;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import bg from "../../images/vol.jpg";
+import bg from "../../images/vol.webp";
 
 export default function VolApply() {
   return (

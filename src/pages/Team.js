@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import profile from "../images/profile.jpg";
+import profile from "../images/profile.jpeg";
 import insta from "../icons/insta.svg";
 import twitter from "../icons/twitter.svg";
 import linkedin from "../icons/linkedin.svg";
